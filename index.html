@@ -6,11 +6,11 @@
 <title>Vero — Παραγγελιοληψία για εστίαση</title>
 <meta name="description" content="Vero: γρήγορη παραγγελιοληψία από το PDA ή το κινητό του σερβιτόρου. Τραπέζια, παραγγελίες, εκτύπωση σε κουζίνα και μπαρ, λογαριασμός. Δουλεύει και χωρίς internet.">
 <meta name="theme-color" content="#0f172a">
-<link rel="icon" href="mark.png">
+<link rel="icon" href="v.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="icon-192.png">
 <meta property="og:title" content="Vero — Παραγγελιοληψία για εστίαση">
 <meta property="og:description" content="Η παραγγελία φεύγει από το τραπέζι και τυπώνεται στην κουζίνα σε δευτερόλεπτα.">
-<meta property="og:image" content="logo.png">
+<meta property="og:image" content="icon-192.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap">
 <style>
@@ -29,7 +29,7 @@ a{color:inherit}
 .nav{position:sticky;top:0;z-index:20;background:rgba(11,18,34,.86);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.06)}
 .nav .wrap{display:flex;align-items:center;gap:16px;height:62px}
 .brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-weight:800;font-size:19px;letter-spacing:.02em}
-.brand img{width:36px;height:auto}
+.brand img{width:36px;height:36px;border-radius:50%;box-shadow:0 0 0 1px rgba(255,255,255,.14)}
 .nav nav{margin-left:auto;display:flex;gap:4px}
 .nav nav a{color:#c4cde0;text-decoration:none;font-size:14px;font-weight:600;padding:8px 12px;border-radius:8px}
 .nav nav a:hover{color:#fff;background:rgba(255,255,255,.08)}
@@ -43,7 +43,7 @@ a{color:inherit}
 /* hero */
 .hero{background:radial-gradient(1200px 500px at 80% -10%,rgba(29,125,240,.35),transparent 60%),var(--navy);color:#fff;overflow:hidden}
 .hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;padding-top:72px;padding-bottom:72px}
-.logo{width:260px;margin:0 0 26px -8px}
+.logo{display:flex;flex-direction:column;align-items:flex-start;gap:18px;margin:0 0 30px}.logo-v{width:96px;height:96px;border-radius:50%;box-shadow:0 0 0 1px rgba(255,255,255,.14),0 12px 34px rgba(29,125,240,.28)}.logo-w{width:250px}
 .hero h1{font-size:clamp(32px,4.2vw,48px);line-height:1.08;margin:0 0 18px;font-weight:800;letter-spacing:-.02em}
 .hero h1 em{font-style:normal;color:#5aa8ff}
 .hero p.lead{font-size:18px;color:#b8c3d9;margin:0 0 30px;max-width:34em}
@@ -56,7 +56,7 @@ a{color:inherit}
 .phone.a{left:6%;top:40px;transform:rotate(-6deg)}
 .phone.b{right:4%;top:0;z-index:2;transform:rotate(4deg)}
 @media(max-width:900px){.hero .wrap{grid-template-columns:1fr}.phones{height:480px;max-width:460px;margin:0 auto;width:100%}.phone{width:210px}}
-@media(max-width:460px){.phones{height:420px}.phone{width:180px}.logo{width:210px}}
+@media(max-width:460px){.phones{height:420px}.phone{width:180px}.logo-v{width:80px;height:80px}.logo-w{width:210px}}
 
 /* sections */
 section{padding:84px 0}
@@ -116,7 +116,7 @@ footer .sp{flex:1}
 
 <header class="nav">
   <div class="wrap">
-    <a class="brand" href="#"><img src="mark.png" alt="">Vero</a>
+    <a class="brand" href="#"><img src="v.svg" alt="">Vero</a>
     <nav>
       <a href="#dynatotites">Δυνατότητες</a>
       <a href="#pos-douleuei">Πώς δουλεύει</a>
@@ -130,7 +130,7 @@ footer .sp{flex:1}
 <div class="hero">
   <div class="wrap">
     <div>
-      <img class="logo" src="logo.png" alt="Vero — Always. Everywhere. Reliable.">
+      <div class="logo"><img class="logo-v" src="v.svg" alt=""><img class="logo-w" src="wordmark.png" alt="Vero — Always. Everywhere. Reliable."></div>
       <h1>Η παραγγελία φεύγει από το τραπέζι <em>πριν φτάσεις στην κουζίνα.</em></h1>
       <p class="lead">Το Vero μετατρέπει το PDA ή το κινητό του σερβιτόρου σε σύστημα παραγγελιοληψίας. Τραπέζια, παραγγελίες, εκτύπωση σε κουζίνα και μπαρ, λογαριασμός. Απλό από την πρώτη βάρδια.</p>
       <div class="cta">
@@ -247,7 +247,7 @@ footer .sp{flex:1}
 
 <footer>
   <div class="wrap">
-    <span class="brand"><img src="mark.png" alt="" style="width:30px;height:auto">Vero</span>
+    <span class="brand"><img src="v.svg" alt="" style="width:30px;height:30px">Vero</span>
     <span>Always. Everywhere. Reliable.</span>
     <span class="sp"></span>
     <span>© 2026 Vasileios Tripolidis. Με επιφύλαξη παντός δικαιώματος.</span>
